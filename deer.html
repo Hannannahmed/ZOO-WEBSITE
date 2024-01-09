@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>deer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap');
+.nav-item{
+    font-size: 17px !important;
+    font-weight: bolder;
+    font-family: 'poppins';
+  }
+  .nav-item a:hover{
+    color: #86c305 !important;
+  }
+  .nav-item:hover {
+          border-bottom: 1px solid orangered;
+          font-weight: 600px;
+          transition: 0.3s ease-in-out;
+      }
+      
+      .nav-item a:hover {
+          transition: 0.3s ease-in-out;
+          transform: translateY(-3px);
+      } 
+      .nav-item a{
+      color:white!important;
+     }
+     .dropdown-menu li a{
+        color: black !important;
+      }
+      .dropdown-menu li a:hover{
+        color: white!important;
+        background-color: #86c305;
+        
+      }
+      .child{
+    background:url(img/wood.jpg ) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300PX;
+   }
+   .text{
+position: relative;
+top: 70%;
+left: 50%;
+transform: translate(-50%,-50%);
+   }
+   .textbtn{
+    top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+    
+    color: white;
+position: absolute;
+
+
+   }
+   h1{
+    font-family:'Stylish' ;
+    font-size: 50px;
+    font-weight: bolder;
+   }
+    .breadcrumb-item+.breadcrumb-item::before {
+    content: ">"
+}
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .1rem 0rem !important;
+    margin-bottom: 0rem;
+    list-style: none;
+    background-color: #ffffff;
+    border-radius: .25rem
+}
+
+.single_product {
+    padding-top: 66px;
+    padding-bottom: 140px;
+    background-color: #e5e5e5;
+    margin-top: 0px;
+    padding: 17px
+}
+
+.product_name {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0px
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.50em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem
+}
+
+.product-rating {
+    margin-top: 10px
+}
+
+.rating-review {
+    color: #5b5b5b
+}
+
+.product_price {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 9px;
+    clear: left
+}
+
+.product_discount {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 9px;
+    clear: left;
+    margin-left: 10px;
+    color: red
+}
+
+
+
+.br-dashed {
+    border-radius: 5px;
+    border: 1px dashed #dddddd;
+    margin-top: 6px
+}
+
+.pr-info {
+    margin-top: 2px;
+    padding-left: 2px;
+    margin-left: -14px;
+    padding-left: 0px
+}
+
+.break-all {
+    color: #5e5e5e
+}
+
+.image_selected {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% + 15px);
+    height: 525px;
+    -webkit-transform: translateX(-15px);
+    -moz-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    -o-transform: translateX(-15px);
+    transform: translateX(-15px);
+    border: solid 1px #e8e8e8;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px
+}
+
+.image_list li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 165px;
+    border: solid 1px #e8e8e8;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 15px;
+    cursor: pointer;
+    padding: 15px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    overflow: hidden
+}
+
+
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Rubik:300,400,500,700,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #FFFFFF;
+    color: #000000
+}
+
+div {
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0px
+}
+
+.single_product {
+    padding-top: 16px;
+    padding-bottom: 140px
+}
+
+
+.image_list li:last-child {
+    margin-bottom: 0
+}
+
+.image_list li:hover {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3)
+}
+
+.image_list li img {
+    max-width: 100%
+}
+
+.navbar-toggler{
+  background-color: aliceblue;
+}
+li{
+  list-style: none;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+  margin-top: 0;
+}
+.dropdown .dropdown-menu{
+  display: none;
+}
+.dropdown:hover .dropdown-toggle::after{
+  border-top: 0;
+  border-bottom: .3em solid;
+}
+
+  </style>
+  <body onload="run()">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand px-3" href="index.html" style="font-size: 30px;font-weight: 600;font-family: 'poppin';"><img  src="img/Zooventour_logo.png"  height="50px"  alt=""> <span style="color: red;">Z</span> <span style="color: white;"> O </span><span style="color: green ;">O </span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="services.html">Service</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                </li>
+              
+                 <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="membership.html">Membership</a></li>
+                    <li><a class="dropdown-item" href="animal.html">Animal </a></li>
+                    <li><a class="dropdown-item" href="faq.html">FAQ </a></li>
+                    
+                   
+                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown d-none" id="account-li">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Your Account
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="javascript:void(0)" id="account"></a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0)" onclick="logout()">Logout </a></li>
+                  </ul>
+                </li>
+               
+              
+               
+              
+              </ul>
+              <li class="nav-item ms-auto ">
+                <a href="ticket.html">  <button class="btn ms-auto btn-outline-success" type="submit">Buy Ticket</button></a> 
+                
+        
+                <a href="Signup.html">  <button class="btn ms-auto btn-outline-success d-none" id="createaccount" type="submit">Create Account</button></a> 
+                  </li>
+             
+       
+              
+            </div>
+          </div>
+        </nav>
+
+
+
+      
+         <div class="container-fluid">
+        </div>
+          
+        
+          <div class="child">
+          <div class="text">
+            <div class="textbtn">
+              <h1>Animal Detail  </h1>
+           
+           
+          </div>    
+          </div>
+          </div>
+          </div>
+         
+    
+    
+    
+        <div class="single_product">
+            <div class="container-fluid" style=" background-color: #fff; padding: 11px;">
+                <div class="row">
+                    <div class="col-lg-2 order-lg-1 order-2">
+                        <ul class="image_list">
+                            <li ><img src="img/dder1.jfif" alt="" ></li>
+                            <li ><img src="img/deer2.jfif" alt=""></li>
+                            <li ><img src="img/deer3.jfif" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 order-lg-2 order-1">
+                        <div class="image_selected"><img src="img/deer4.jfif" height="400px" width="400px"></div>
+                    </div>
+                    <div class="col-lg-6 order-3">
+                        <div class="product_description">
+                            <nav>
+                                <ol class="breadcrumb">
+                                  
+                                </ol>
+                            </nav>
+                            <br>
+                            <div class="product_name"> <b>Forest Deer</b></div>
+                            <br>
+                            <br>
+                            
+                            <div class="product-rating"><span class="badge badge-success"><i class="fa fa-star"></i> Extreme Rare</span> <span class="rating-review">35 Visits</span></div>
+                            <div> <span class="product_price">One of a Kind</span> 
+                                <br>
+                                <br>
+                                
+                                <hr class="singleline">
+                                <div> <span class="product_info">One of a kind <span><br> <span class="product_info">usually found on hilly areas<span><br> <span class="product_info">can survie for 3 days with water<span><br> <span class="product_info"> friendly to humans<span><br> </div>
+                                    <br>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="br-dashed">
+                                                    <div class="row">
+                                                        
+                                                        
+                                                    </div>
+                                                </div>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+                <style>
+                    a{
+                      text-decoration: none;
+                    }
+                    a:hover{
+                      color: #86c305 !important;
+                    }
+                   #liiiiii li::before{
+                          content:"\2022";
+                          color: greenyellow;
+                          font-weight: 900;
+                          font-size: 20px;
+                          display: inline-block;
+                          width: 1rem;
+                          margin-left: -1em;
+                      }
+                    #liiiiii li{
+                        list-style: none;
+                      }
+                      h6{
+                        font-size: 20px;
+                        
+                      }
+                  </style>
+                  
+                  
+                  <!-- Footer -->
+                  <footer class="text-center text-lg-start bg-white text-muted" style="background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(img/foote.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                    <!-- Section: Social media -->
+                    
+                    <!-- Section: Social media -->
+                  
+                    <!-- Section: Links  -->
+                    <section class="">
+                      <div class="container text-center text-md-start mt-5">
+                        <!-- Grid row -->
+                        <div class="row mt-3">
+                          <!-- Grid column -->
+                          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light " id="liiiiii">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4 mt-5 "> <i class="fas fa-gem me-3 text-secondary"></i>Opening Days
+                            </h6>
+                           
+                      
+                        
+                        
+                              <li>Tuesday 10.00 AM  to 6.00 PM </li>
+                              <hr style="color: gray;">
+                              
+                             
+                              <li>Thursday 10.00 AM  to 6.00 PM </li>
+                              <hr style="color: gray;">
+                            
+                            
+                              <li>Saturday 10.00 AM  to 6.00 PM </li>
+                              <hr style="color: gray;">
+                              <li>Sunday 10.00 AM  to 6.00 PM </li>
+                              <hr style="color: gray;">
+                                  
+                         
+                         
+                              
+                             
+                  
+                          </div>
+                          <!-- Grid column -->
+                  
+                          <!-- Grid column -->
+                          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                             Pages
+                            </h6>
+                            <p>
+                              <a href="about.html" class="text-reset">About</a>
+                            </p>
+                            <hr style="color: gray;">
+                            <p>
+                              <a href="shop.html" class="text-reset">Shop</a>
+                            </p>
+                            <hr style="color: gray;">
+                            <p>
+                              <a href="services.html" class="text-reset">Services</a>
+                            </p>
+                            <hr style="color: gray;">
+                            <p>
+                              <a href="contact.html" class="text-reset">Contact</a>
+                            </p>
+                            <hr style="color: gray;">
+                          </div>
+                          <!-- Grid column -->
+                  
+                          <!-- Grid column -->
+                          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                              Useful links
+                            </h6>
+                            <p>
+                              <a href="animal.html" class="text-reset">Animal</a>
+                            </p>
+                            <hr style="color: gray;">
+                            <p>
+                              <a href="ticket.html" class="text-reset">Buy Ticket</a>
+                            </p>
+                            <hr style="color: gray;">
+                            <p>
+                              <a href="faq.html" class="text-reset">FAQ</a>
+                            </p>
+                            <hr style="color: gray;">
+                            <p>
+                              <a href="membership.html" class="text-reset">Membership</a>
+                            </p>
+                            <hr style="color: gray;">
+                          </div>
+                          <!-- Grid column -->
+                  
+                          <!-- Grid column -->
+                          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light mt-5">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p>
+                              <i class="fa fa-map-marker" style="font-size:24px"></i> &nbsp;&nbsp;
+                              Address: Off University Road, Block 16, Gulshan-e-Iqbal, Karachi
+                            </p>
+                            <hr style="color: gray;">
+                            <p>
+                              <i class="fa fa-envelope" style="font-size:24px"></i> &nbsp;&nbsp;
+                            ourZoo@gmail.com
+                            </p>
+                            <hr style="color: gray;">
+                            <p><i class="fa fa-phone" style="font-size:24px"></i> &nbsp; &nbsp; 0312-2530148</p>
+                            <hr style="color: gray;">
+                          </div>
+                          <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                      </div>
+                    </section>
+                    <!-- Section: Links  -->
+                  
+                    <!-- Copyright -->
+                    
+                    <!-- Copyright -->
+                  </footer>
+                  <!-- Footer -->
+                     
+                  <script src="index.js"></script>
+                  
+                  
+                  
+               
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

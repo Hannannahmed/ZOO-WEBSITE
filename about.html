@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap');
+    .banner{
+        background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)), url(img/bg-1.jpg);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+        height: 80vh;
+        width: 100%;
+        color: white;
+        
+        text-align: center;
+        padding-top: 50vh;
+
+        
+        
+    }
+    a{
+    text-decoration: none;
+  }
+  a:hover{
+    color: #86c305 !important;
+  }
+ #liiiiii li::before{
+        content:"\2022";
+        color: greenyellow;
+        font-weight: 900;
+        font-size: 20px;
+        display: inline-block;
+        width: 1rem;
+        margin-left: -1em;
+    }
+  #liiiiii li{
+      list-style: none;
+    }
+    h6{
+      font-size: 20px;
+      
+    }
+    .nav-item{
+    font-size: 17px !important;
+    font-weight: bolder;
+    font-family: 'poppins';
+  }
+  .nav-item a:hover{
+    color: #86c305 !important;
+  }
+  .nav-item:hover {
+          border-bottom: 1px solid orangered;
+          font-weight: 600px;
+          transition: 0.3s ease-in-out;
+      }
+      
+      .nav-item a:hover {
+          transition: 0.3s ease-in-out;
+          transform: translateY(-3px);
+      } 
+      .nav-item a{
+      color:white!important;
+     }
+     .dropdown-menu li a{
+        color: black !important;
+      }
+      .dropdown-menu li a:hover{
+        color: white!important;
+        background-color: #86c305;
+        
+      }
+      .carousel-inner{
+        flex-wrap: wrap;
+       
+    }
+    .SLIDEbody{
+       
+       width: 400px;
+       
+      
+      
+  
+    }
+    #carouselExampleIndicators button{
+    color: black!important;
+        
+    }
+    h1{
+      font-family: 'Stylish';
+    }
+ 
+
+    .navbar-toggler{
+  background-color: aliceblue;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+  margin-top: 0;
+}
+.dropdown .dropdown-menu{
+  display: none;
+}
+.dropdown:hover .dropdown-toggle::after{
+  border-top: 0;
+  border-bottom: .3em solid;
+}
+#liiiiii li::before{
+        content:"\2022";
+        color: greenyellow;
+        font-weight: 900;
+        font-size: 20px;
+        display: inline-block;
+        width: 1rem;
+        margin-left: -1em;
+    }
+
+  </style>
+  <body onload="run()">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand px-3" href="index.html" style="font-size: 30px;font-weight: 600;font-family: 'poppin';"><img  src="img/Zooventour_logo.png"  height="50px"  alt=""> <span style="color: red;">Z</span> <span style="color: white;"> O </span><span style="color: green ;">O </span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html" >Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="services.html">Service</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                </li>
+              
+                 <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="membership.html">Membership</a></li>
+                    <li><a class="dropdown-item" href="animal.html">Animal </a></li>
+                    <li><a class="dropdown-item" href="faq.html">FAQ </a></li>
+                    
+                   
+                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown d-none" id="account-li">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Your Account
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="javascript:void(0)" id="account"></a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0)" onclick="logout()">Logout </a></li>
+                  </ul>
+                </li>
+               
+              
+               
+              
+              </ul>
+              <li class="nav-item ms-auto ">
+                <a href="ticket.html">  <button class="btn ms-auto btn-outline-success" type="submit">Buy Ticket</button></a> 
+                
+        
+                <a href="Signup.html">  <button class="btn ms-auto btn-outline-success d-none" id="createaccount" type="submit">Create Account</button></a> 
+                  </li>
+             
+       
+              
+            </div>
+          </div>
+        </nav>
+  
+    <div class="banner">
+        <h1 style="font-size: 50px; " >About Zoo</h1>
+       
+    </div>
+
+
+    <br><br><br><br><br>
+
+
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-md-4 ">
+                
+                <img  src="images/info-img.png" alt="" style="width: 100% !important ;border-end-end-radius: 200px;">
+
+            </div>
+
+            <div class="col-md-4" id="liiiiii">
+                <h1>Safety Info</h1>
+                <hr style="color: gray;">
+                <ul>
+                    <li style="color: #858585; font-size: large;"> Smoking is prohibited</li>
+                    <hr style="color: gray;">
+                    
+                     <li style=" color: #858585; font-size: large;"> Do not feed the animals, throw objects</li> 
+                     <hr style="color: gray;"> 
+                     <li style=" color: #858585; font-size: large;">  Do not tap or bang on exhibit glass </li>  
+                     <hr style="color: gray;">
+                            <li style=" color: #858585; font-size: large;"> Respect Zoo Rules & Gudie Line</li> 
+                            <hr style="color: gray;">
+                     <li style=" color: #858585; font-size: large;"> Keep Zoo Neat & Clean</li>  
+                     <hr style="color: gray;">
+                   </ul>
+
+            </div>
+
+            <div class="col-md-4 pt-0 " id="liiiiii">
+              <h1 style="color: black;">Opening Days</h1>
+              <hr style="color: gray;">
+    
+      
+      
+       <li >Tuesday 10.00 AM  to 6.00 PM </li>
+       <hr style="color: gray;">
+       
+      
+       <li>Thursday 10.00 AM  to 6.00 PM </li>
+       <hr style="color: gray;">
+     
+     
+       <li>Saturday 10.00 AM  to 6.00 PM </li>
+       <hr style="color: gray;">
+       <li>Sunday 10.00 AM  to 6.00 PM </li>
+       <hr style="color: gray;">
+           
+  
+                </div>
+                
+                   
+                   </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <br><br><br><br><br>
+
+
+    <div class="container">
+        <div class="row">
+
+
+
+            <div class="col-md-6">
+                <h5  style="color: #858585; font-family:'Tilt Neon',cursive;">Welcome To Zoo</h5>
+                <br>
+    <h1 style=" font-family:'Tilt Neon',cursive;">Why You Should Visit </h1>
+    <h1 style=" color: #86c305; font-family:'Tilt Neon',cursive;">Zoo</h1>
+    <div class="sh">
+    <p style="color: #858585;"> Zoo is now open daily from 9:30 am–5 pm. Advance timed reservations are required for all guests. We look forward to seeing you!</p>
+    </div>
+    <br><br>
+    <div class="parent">
+        <div class="child">
+            <div class="beta" style="display: flex; gap: 15px;">
+            <svg style="color: #86c305;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+              </svg>
+            <h5 style="font-family:'Tilt Neon',cursive;">Free car Parking</h5>
+            </div>
+            <p style="margin-left: 48px; color: #858585;">Cost: $17 (free for members)
+    
+                Parking is available at the Zoo Garage at 35th & Girard Ave, Tiger Parking Lot</p>
+        </div>
+        <div class="child">
+            <div class="beta" style="display: flex; gap: 15px;">
+                <svg style="color: #86c305;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-flower2" viewBox="0 0 16 16">
+                    <path d="M8 16a4 4 0 0 0 4-4 4 4 0 0 0 0-8 4 4 0 0 0-8 0 4 4 0 1 0 0 8 4 4 0 0 0 4 4zm3-12c0 .073-.01.155-.03.247-.544.241-1.091.638-1.598 1.084A2.987 2.987 0 0 0 8 5c-.494 0-.96.12-1.372.331-.507-.446-1.054-.843-1.597-1.084A1.117 1.117 0 0 1 5 4a3 3 0 0 1 6 0zm-.812 6.052A2.99 2.99 0 0 0 11 8a2.99 2.99 0 0 0-.812-2.052c.215-.18.432-.346.647-.487C11.34 5.131 11.732 5 12 5a3 3 0 1 1 0 6c-.268 0-.66-.13-1.165-.461a6.833 6.833 0 0 1-.647-.487zm-3.56.617a3.001 3.001 0 0 0 2.744 0c.507.446 1.054.842 1.598 1.084.02.091.03.174.03.247a3 3 0 1 1-6 0c0-.073.01-.155.03-.247.544-.242 1.091-.638 1.598-1.084zm-.816-4.721A2.99 2.99 0 0 0 5 8c0 .794.308 1.516.812 2.052a6.83 6.83 0 0 1-.647.487C4.66 10.869 4.268 11 4 11a3 3 0 0 1 0-6c.268 0 .66.13 1.165.461.215.141.432.306.647.487zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                  </svg>
+                <h5 style="font-family:'Tilt Neon',cursive;"> Supper Eviorment</h5>
+                </div>
+                <p style="margin-left: 48px;color: #858585;"> Zoo is located at the corner of 34th Street and Girard Avenue in historic Fairmount Park.</p>
+            </div>
+        </div>
+    
+    <div class="parent">
+        <div class="child">
+            <div class="beta" style="display: flex; gap: 10px;">
+                <svg style="color: #86c305;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+                  </svg>
+            <h5 style="font-family:'Tilt Neon',cursive;">World best Animals</h5>
+            </div>
+            <p style="margin-left: 48px;color: #858585;">Connect with our animals, then connect with a bigger mission. Learn more about how we work to enlighten people.</p>
+        </div>
+        <div class="child">
+            <div class="beta" style="display: flex; gap: 10px;">
+                <svg style="color: #86c305;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-shield-fill-exclamation" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                  </svg>
+                <h5 style="font-family:'Tilt Neon',cursive;">Free car Parking</h5>
+                </div>
+                <p style="margin-left: 48px;color: #858585;">Cost: $17 (free for members)
+        
+                    Parking is available at the Zoo Garage at 35th & Girard Ave, Tiger Parking Lot</p>
+            </div>
+        </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+                <img class="img-fluid"  src="images/lion-image.png" alt=""style="width: 100%;">
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h5  style="color: #858585; font-family:'Tilt Neon',cursive;">Welcome To Viserlife</h5>
+                <br>
+    <h1 style="font-weight: 900; font-family:'Tilt Neon',cursive;">Why You Should Visit </h1>
+    <h1 style="font-weight: 900; color: #86c305; font-family:'Tilt Neon',cursive;">Viserlife</h1>
+    <div class="sh" style="width: 400px;">
+    <p style="color: #858585;">Viserlife Zoo is now open daily from 9:30 am–5 pm. Advance timed reservations are required for all guests. We look forward to seeing you!</p>
+    </div>
+    <br><br>
+    <div class="parent">
+        <div class="child">
+            <div class="beta" style="display: flex; gap: 15px;">
+            <svg style="color: #86c305;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+              </svg>
+            <h5 style="font-family:'Tilt Neon',cursive;">Free car Parking</h5>
+            </div>
+            <p style="margin-left: 48px; color: #858585;">Cost: $17 (free for members)
+    
+                Parking is available at the Zoo Garage at 35th & Girard Ave, Tiger Parking Lot</p>
+        </div>
+        <div class="child">
+            <div class="beta" style="display: flex; gap: 15px;">
+                <svg style="color: #86c305;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-flower2" viewBox="0 0 16 16">
+                    <path d="M8 16a4 4 0 0 0 4-4 4 4 0 0 0 0-8 4 4 0 0 0-8 0 4 4 0 1 0 0 8 4 4 0 0 0 4 4zm3-12c0 .073-.01.155-.03.247-.544.241-1.091.638-1.598 1.084A2.987 2.987 0 0 0 8 5c-.494 0-.96.12-1.372.331-.507-.446-1.054-.843-1.597-1.084A1.117 1.117 0 0 1 5 4a3 3 0 0 1 6 0zm-.812 6.052A2.99 2.99 0 0 0 11 8a2.99 2.99 0 0 0-.812-2.052c.215-.18.432-.346.647-.487C11.34 5.131 11.732 5 12 5a3 3 0 1 1 0 6c-.268 0-.66-.13-1.165-.461a6.833 6.833 0 0 1-.647-.487zm-3.56.617a3.001 3.001 0 0 0 2.744 0c.507.446 1.054.842 1.598 1.084.02.091.03.174.03.247a3 3 0 1 1-6 0c0-.073.01-.155.03-.247.544-.242 1.091-.638 1.598-1.084zm-.816-4.721A2.99 2.99 0 0 0 5 8c0 .794.308 1.516.812 2.052a6.83 6.83 0 0 1-.647.487C4.66 10.869 4.268 11 4 11a3 3 0 0 1 0-6c.268 0 .66.13 1.165.461.215.141.432.306.647.487zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                  </svg>
+                <h5 style="font-family:'Tilt Neon',cursive;"> Supper Eviorment</h5>
+                </div>
+                <p style="margin-left: 48px;color: #858585;">Viserlife Zoo is located at the corner of 34th Street and Girard Avenue in historic Fairmount Park.</p>
+            </div>
+        </div>
+    
+    <div class="parent">
+        <div class="child">
+            <div class="beta" style="display: flex; gap: 10px;">
+                <svg style="color: #86c305;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+                  </svg>
+            <h5 style="font-family:'Tilt Neon',cursive;">World best Animals</h5>
+            </div>
+            <p style="margin-left: 48px;color: #858585;">Connect with our animals, then connect with a bigger mission. Learn more about how we work to enlighten people.</p>
+        </div>
+        <div class="child">
+            <div class="beta" style="display: flex; gap: 10px;">
+                <svg style="color: #86c305;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-shield-fill-exclamation" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                  </svg>
+                <h5 style="font-family:'Tilt Neon',cursive;">Free car Parking</h5>
+                </div>
+                <p style="margin-left: 48px;color: #858585;">Cost: $17 (free for members)
+        
+                    Parking is available at the Zoo Garage at 35th & Girard Ave, Tiger Parking Lot</p>
+            </div>
+        </div>
+    </div>      
+    
+            <div class="col-md-5">
+                <img class="img-fluid"  src="images/lion-image.png" alt=""style="width: 100%;">
+            </div>
+        </div>
+    </div> -->
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+    
+            </div>
+            <div class="col-md-4">
+        <h5 style="margin-left: 100px; color: #858585; font-family:'Tilt Neon',cursive;">Animals</h5>
+        <div class="any" style="display: flex; gap: 10px;">
+        <h1 style="font-weight: 900; font-family:'Tilt Neon',cursive;" >Our  Zoo </h1>
+         <h1 style="font-weight: 900; color: #86c305; font-family:'Tilt Neon',cursive;">Animals</h1>
+         </div>
+         <p style="width: 300px; height: 1s00px; text-align: center; color: #858585;"> Connect with our animals, then connect with a bigger mission. Learn more about how we work to enlighten people</p>
+        
+    
+    </div>
+             <div class="col-md-4">
+    
+            </div> 
+        </div>
+    </div>
+    
+    
+     <div class="container">
+        <div class="row">
+            <div class="col-md-3" >
+                <img style="height: 250px; width: 100%;" src="images/img-1.png" alt="">
+                <h5 style="margin-left: 100px; margin-top: 10px; font-family:'Tilt Neon',cursive;" >Lion</h5>
+                <p style="margin-left: 70px; margin-top: 10px; color: #858585;">African Plains</p>
+            </div>
+            <div class="col-md-3">
+                <img style="height: 250px; width: 100%;" src="images/img-2.png" alt="">
+    <h5 style="margin-left: 40px; margin-top: 10px; font-family:'Tilt Neon',cursive;">Poison Green Frog</h5>
+    <p style="margin-left: 40px; margin-top: 10px; color: #858585;">World of Reptiles</p>
+            </div>
+            <div class="col-md-3">
+                <img style="height: 250px; width: 100%;" src="images/img-3.png" alt="">
+                <h5 style="margin-left: 60px; margin-top: 10px; font-family:'Tilt Neon',cursive;">Siberian Tiger</h5>
+    <p style="margin-left: 70px; margin-top: 10px; color: #858585;">Tiger Mountain</p>
+            </div>
+            <div class="col-md-3">
+                <img style="height: 250px; width: 100%;" src="images/img-4.png" alt="">
+                <h5 style="margin-left: 80px; margin-top: 10px;font-family:'Tilt Neon',cursive;">Hippos</h5>
+    <p style="margin-left: 70px; margin-top: 10px; color: #858585;">Zoo Center</p>
+            </div>
+        </div>
+    </div> 
+        
+    
+     <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img style="height: 250px; width: 100%; font-family:'Tilt Neon',cursive;" src="images/img-5.png" alt="">
+                <h5 style="margin-left: 70px; margin-top: 10px;">Green Pythons</h5>
+    <p style="margin-left: 70px; margin-top: 10px; color: #858585;">World of Reptiles</p>
+            </div>
+            <div class="col-md-3">
+                <img style="height: 250px; width:100%; font-family:'Tilt Neon',cursive;" src="images/img-6.png" alt="">
+                <h5 style="margin-left: 70px; margin-top: 10px;">Asian Elephants</h5>
+    <p style="margin-left: 70px; margin-top: 10px; color: #858585;">World of Reptiles</p>
+            </div>
+            <div class="col-md-3">
+                <img style="height: 250px; width: 100%; font-family:'Tilt Neon',cursive;" src="images/img-7.png" alt="">
+                <h5 style="margin-left: 70px; margin-top: 10px;">Blue Lguana</h5>
+    <p style="margin-left: 70px; margin-top: 10px; color: #858585;">World of Reptiles</p>
+            </div>
+            <div class="col-md-3">
+                <img style="height: 250px; width:100%; font-family:'Tilt Neon',cursive;" src="images/img-8.png" alt="">
+                <h5 style="margin-left: 70px; margin-top: 10px;">Red Macaw</h5>
+    <p style="margin-left: 70px; margin-top: 10px; color: #858585;">World of Reptiles</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+
+    <div class="container-fluid text-light text-center" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(img/banner.png) ;background-position: center; background-repeat: no-repeat;background-size: cover;  width: 100%;">
+      <h1>What our visitor says about <br> <span style="color: #86c305;">  ZOO </span></h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner pb-5 ">
+        <div class="carousel-item active align-items-center">
+            <div class="SLIDEbody text-center rounded-3 text-dark bg-light mx-auto mt-5">
+              <img class="imgg mx-auto mt-4" src="img/people-5.jpg" style="border-radius: 50% !important; height: 90px !important; width: 90px !important; align-items: center !important; " class="d-block w-100" alt="...">
+              <h2 style="font-family: 'Poppins' ; font-size: 25px   ;">Tony Stark</h2>
+              <p class="ptext pb-4" style="color: gray; font-family: sans-serif;">
+                  To date, the UNLESS Contest has resulted in hundreds of trees planted in Brazil, thousands of signatures in support of a wildlife bridge, and .........
+                </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="SLIDEbody text-center rounded-3 text-dark bg-light mx-auto mt-5">
+              <img class="imgg mx-auto mt-4" src="img/people-3.jpg" style="border-radius: 50% !important; height: 90px !important; width: 90px !important; align-items: center !important; " class="d-block w-100" alt="...">
+              <h2 style="font-family: 'Poppins' ; font-size: 25px   ;">Robarts Jane </h2>
+              <p class="ptext pb-4" style="color: gray; font-family: sans-serif;">
+                  By lehading and supporting critical conservation projects in the field, encouraging and leveraging the power of thousands of visitors, and serving as ......
+                </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="SLIDEbody text-center rounded-3 text-dark bg-light mx-auto mt-5">
+              <img class="imgg mx-auto mt-4" src="img/people-4.jpg" style="border-radius: 50% !important; height: 90px !important; width: 90px !important; align-items: center !important; " class="d-block w-100" alt="...">
+              <h2 style="font-family: 'Poppins' ; font-size: 25px   ;">Peter Parker </h2>
+              <p class="ptext pb-4" style="color: gray; font-family: sans-serif;">
+                 
+                In addition to housing endangered animals—some extinct in the wild—and supporting conservation efforts around the world,  Zoo helps 
+                      
+                </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    </div>
+    
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>What`s you know about <br> <span style="color: #86c305;">  Zoo </span></h1>
+          <p>Need help with your science homework? Wondering about what our scientists do at the Zoo?</p>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+               <h6> Why Should Go visit Zoo</h6>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> <p style="font-size: 19px;">A zoo is a place where environment finds real care and nurture. When children visit a zoo they learn and realise the importance of environmental awareness and its impact on people's lives. It helps them become better, kinder and play a role in its conservation</p></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                 <h6> Can I bring food and beverages to the zoo? </h6>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> <p style="font-size: 19px;">Absolutely! Outside food, drink, and coolers are allowed. For the safety of the animals, you may NOT bring:</p>
+    <ul id="liiifaq">
+                 <li> Alcoholic beverages </li>
+                 <li> Glass containers </li>
+                 <li> Grills </li>
+                 <li> Straws </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                 <h6> What is the ticket refund policy? Can I change the date or time of my ticket? </h6>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p style="font-size: 19px;"> Tickets are nonrefundable. </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 ">
+        <img src="img/home animal 6.png" width="100%" alt="">
+      </div>
+    </div>
+    </div>
+    
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted" style="background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(img/foote.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+    <!-- Section: Social media -->
+    
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start ">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light " id="liiiiii">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 mt-5 "> <i class="fas fa-gem me-3 text-secondary"></i>Opening Days
+            </h6>
+           
+      
+        
+        
+              <li>Tuesday 10.00 AM  to 6.00 PM </li>
+              <hr style="color: gray;">
+              
+             
+              <li>Thursday 10.00 AM  to 6.00 PM </li>
+              <hr style="color: gray;">
+            
+            
+              <li>Saturday 10.00 AM  to 6.00 PM </li>
+              <hr style="color: gray;">
+              <li>Sunday 10.00 AM  to 6.00 PM </li>
+              <hr style="color: gray;">
+                  
+         
+         
+              
+             
+  
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+             Pages
+            </h6>
+            <p>
+              <a href="about.html" class="text-reset">About</a>
+            </p>
+            <hr style="color: gray;">
+            <p>
+              <a href="shop.html" class="text-reset">Shop</a>
+            </p>
+            <hr style="color: gray;">
+            <p>
+              <a href="services.html" class="text-reset">Services</a>
+            </p>
+            <hr style="color: gray;">
+            <p>
+              <a href="contact.html" class="text-reset">Contact</a>
+            </p>
+            <hr style="color: gray;">
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="animal.html" class="text-reset">Animal</a>
+            </p>
+            <hr style="color: gray;">
+            <p>
+              <a href="ticket.html" class="text-reset">Buy Ticket</a>
+            </p>
+            <hr style="color: gray;">
+            <p>
+              <a href="faq.html" class="text-reset">FAQ</a>
+            </p>
+            <hr style="color: gray;">
+            <p>
+              <a href="membership.html" class="text-reset">Membership</a>
+            </p>
+            <hr style="color: gray;">
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light mt-5">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p>
+              <i class="fa fa-map-marker" style="font-size:24px"></i> &nbsp;&nbsp;
+              Address: Off University Road, Block 16, Gulshan-e-Iqbal, Karachi
+            </p>
+            <hr style="color: gray;">
+            <p>
+              <i class="fa fa-envelope" style="font-size:24px"></i> &nbsp;&nbsp;
+            ourZoo@gmail.com
+            </p>
+            <hr style="color: gray;">
+            <p><i class="fa fa-phone" style="font-size:24px"></i> &nbsp; &nbsp; 0312-2530148</p>
+            <hr style="color: gray;">
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="index.js"></script>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>

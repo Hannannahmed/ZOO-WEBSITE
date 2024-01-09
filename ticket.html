@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap');
+.nav-item{
+    font-size: 17px !important;
+    font-weight: bolder;
+    font-family: 'poppins';
+  }
+  .nav-item a:hover{
+    color: #86c305 !important;
+  }
+  .nav-item:hover {
+          border-bottom: 1px solid orangered;
+          font-weight: 600px;
+          transition: 0.3s ease-in-out;
+      }
+      
+      .nav-item a:hover {
+          transition: 0.3s ease-in-out;
+          transform: translateY(-3px);
+      } 
+      .nav-item a{
+      color:white!important;
+     }
+     .dropdown-menu li a{
+        color: black !important;
+      }
+      .dropdown-menu li a:hover{
+        color: white!important;
+        background-color: #86c305;
+        
+      }
+  .card{
+    text-align:center;
+    border :5px dotted;
+    padding-top :20px;
+    background-color:green;
+    padding:70px;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url(images/member-card-1.png);
+  
+    color: white;
+    
+
+  }
+  h1{
+    font-family: 'Stylish';
+  }
+
+
+  .banner{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(images/pexels-photo-12914640.webp);
+  
+  color:white;
+    background-repeat: no-repeat;
+      background-size: cover ;
+      height: 70vh;
+      background-position: 80%;
+      width: 100%;
+      padding-top: 300px;
+      text-align: center;
+  }
+  .navbar-toggler{
+  background-color: aliceblue;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+  margin-top: 0;
+}
+.dropdown .dropdown-menu{
+  display: none;
+}
+.dropdown:hover .dropdown-toggle::after{
+  border-top: 0;
+  border-bottom: .3em solid;
+}
+  </style>
+  <body onload="run()">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand px-3" href="index.html" style="font-size: 30px;font-weight: 600;font-family: 'poppin';"><img  src="img/Zooventour_logo.png"  height="50px"  alt=""> <span style="color: red;">Z</span> <span style="color: white;"> O </span><span style="color: green ;">O </span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="services.html">Service</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                </li>
+              
+                 <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="membership.html">Membership</a></li>
+                    <li><a class="dropdown-item" href="animal.html">Animal </a></li>
+                    <li><a class="dropdown-item" href="faq.html">FAQ </a></li>
+                    
+                   
+                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown d-none" id="account-li">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Your Account
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="javascript:void(0)" id="account"></a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0)" onclick="logout()">Logout </a></li>
+                  </ul>
+                </li>
+              
+               
+              
+              </ul>
+              <li class="nav-item ms-auto ">
+               
+                
+        
+                <a href="Signup.html">  <button class="btn ms-auto btn-outline-success d-none" id="createaccount" type="submit">Create Account</button></a> 
+                  </li>
+             
+       
+              
+            </div>
+          </div>
+        </nav>
+  
+  <div class="banner">
+    <h1 style="font-size: 60px;font-weight: 700;">Buy Online Ticket</h1>
+    
+  </div>
+
+
+
+
+  <br><br><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <h2>Child</h2>
+            <p>ticket for 4-12</p>
+            
+            <h1 style="color:yellow;">PKR 500</h1>
+            <br>
+            <h3 >Wellcome to the Zoo</h3>
+            <h4>Admit one</h4>
+            
+            <div class="card-body">
+              <button  data-bs-toggle="modal" data-bs-target="#exampleModal"  data-bs-whatever="@mdo"  style="border-radius:4%;background-color: yellowgreen;border: none;height: 50px;width: 150px;font-size: 20px; color: white;">Buy Ticket</button>
+              
+              
+               
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card">
+            <h2>Adult</h2>
+            <p>ticket for 12+yrs</p>
+            
+            <h1 style="color:yellow">PKR 1000</h1>
+            <br>
+            <h3>Wellcome to the Zoo</h3>
+            <h4>Admit one</h4>
+            <div class="card-body">
+              <button  data-bs-toggle="modal" data-bs-target="#exampleModal"  data-bs-whatever="@mdo"  style="border-radius:4%;background-color: yellowgreen;border: none;height: 50px;width: 150px;font-size: 20px; color: white;">Buy Ticket</button>
+              
+              
+              
+            </div>
+          </div>
+         
+          
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card">
+            <h2>Family</h2>
+            <p>ticket for parents + 2 child</p>
+            
+            <h1 style="color:yellow">PKR 2000</h1> 
+            <br>
+            <h3>Wellcome to the Zoo</h3>
+            <h4>Admit one</h4>
+            <div class="card-body">
+              
+              
+              <button  data-bs-toggle="modal" data-bs-target="#exampleModal"  data-bs-whatever="@mdo"  style="border-radius:4%;background-color: yellowgreen;border: none;height: 50px;width: 150px;font-size: 20px; color: white;">Buy Ticket</button>
+            </div>
+          </div>
+          
+          
+        </div>
+
+
+       
+      </div>
+    </div>
+
+   
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">BOOK YOUR TICKET</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Nubmer Of Person Visiting:</label>
+            <input type="number" class="form-control" id="person" onfocus="nnn()">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Contact name:</label>
+            <input type="text" class="form-control" id="contact" onfocus="">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Contact Email:</label>
+            <input type="email" class="form-control" id="contactemail" onfocus="nnn()">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Select Your Visiting Date:</label>
+            <input type="date"  min="2023-03-04" max="" class="form-control" id="date" onfocus="nnn()">
+          </div>
+          <span id="error" style="color: red;"></span>
+        </form>
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="btn " style="background-color: #86c305;" onclick="buy()">BUY</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function buy(){ 
+     var person=document.getElementById("person").value
+  var contact=document.getElementById("contact").value
+  var contactemail=document.getElementById("contactemail").value
+  var date=document.getElementById("date").value
+
+  if(person.length >0){
+    if(contact.length >2){
+      if(contactemail.length >5){
+       
+
+        localStorage.setItem("person",person);
+        localStorage.setItem("contact",contact);
+        localStorage.setItem("contactemail",contactemail);
+        localStorage.setItem("date",date);
+
+        alert("Your Ticket is book")
+        window.location.href="index.html"
+      }else{
+        error.innerHTML="Contact email filed is Empty";
+      }
+    }else{
+      error.innerHTML="Contact name filed is Empty";
+    }
+  }else{
+    error.innerHTML="Number of Person filed is Empty";
+  }
+}
+
+function nnn(){
+  var error=document.getElementById("error");
+    error.innerHTML="";
+
+}
+
+
+</script>
+    
+<style>
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    color: #86c305 !important;
+  }
+ #liiiiii li::before{
+        content:"\2022";
+        color: greenyellow;
+        font-weight: 900;
+        font-size: 20px;
+        display: inline-block;
+        width: 1rem;
+        margin-left: -1em;
+    }
+  #liiiiii li{
+      list-style: none;
+    }
+    h6{
+      font-size: 20px;
+      
+    }
+</style>
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted" style="background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(img/foote.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+  <!-- Section: Social media -->
+  
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light " id="liiiiii">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4 mt-5 "> <i class="fas fa-gem me-3 text-secondary"></i>Opening Days
+          </h6>
+         
+    
+      
+      
+            <li>Tuesday 10.00 AM  to 6.00 PM </li>
+            <hr style="color: gray;">
+            
+           
+            <li>Thursday 10.00 AM  to 6.00 PM </li>
+            <hr style="color: gray;">
+          
+          
+            <li>Saturday 10.00 AM  to 6.00 PM </li>
+            <hr style="color: gray;">
+            <li>Sunday 10.00 AM  to 6.00 PM </li>
+            <hr style="color: gray;">
+                
+       
+       
+            
+           
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+           Pages
+          </h6>
+          <p>
+            <a href="about.html" class="text-reset">About</a>
+          </p>
+          <hr style="color: gray;">
+          <p>
+            <a href="services.html" class="text-reset">Shop</a>
+          </p>
+          <hr style="color: gray;">
+          <p>
+            <a href="services.html" class="text-reset">Services</a>
+          </p>
+          <hr style="color: gray;">
+          <p>
+            <a href="contact.html" class="text-reset">Contact</a>
+          </p>
+          <hr style="color: gray;">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="animal.html" class="text-reset">Animal</a>
+          </p>
+          <hr style="color: gray;">
+          <p>
+            <a href="ticket.html" class="text-reset">Buy Ticket</a>
+          </p>
+          <hr style="color: gray;">
+          <p>
+            <a href="faq.html" class="text-reset">FAQ</a>
+          </p>
+          <hr style="color: gray;">
+          <p>
+            <a href="membership.html" class="text-reset">Membership</a>
+          </p>
+          <hr style="color: gray;">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light mt-5">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p>
+            <i class="fa fa-map-marker" style="font-size:24px"></i> &nbsp;&nbsp;
+            Address: Off University Road, Block 16, Gulshan-e-Iqbal, Karachi
+          </p>
+          <hr style="color: gray;">
+          <p>
+            <i class="fa fa-envelope" style="font-size:24px"></i> &nbsp;&nbsp;
+          ourZoo@gmail.com
+          </p>
+          <hr style="color: gray;">
+          <p><i class="fa fa-phone" style="font-size:24px"></i> &nbsp; &nbsp; 0312-2530148</p>
+          <hr style="color: gray;">
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>
